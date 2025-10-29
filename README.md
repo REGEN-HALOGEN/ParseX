@@ -52,6 +52,10 @@ This project implements an AI-powered document processing and analysis system wi
 ```bash
 pip install -r requirements.txt
 ```
+4. Download the spaCy language model:
+```bash
+python -m spacy download en_core_web_sm
+```
 
 ## Usage
 1. Start the web interface:

@@ -1,3 +1,6 @@
-- [x] Update project structure in README.md (correct filename from streamlit_app.py to ParseX.py)
-- [x] Add detailed descriptions of frameworks used (Streamlit, FastAPI, AI/ML libraries like transformers, torch, spacy, OCR with pytesseract and opencv)
-- [x] Ensure setup and usage instructions match the actual code
+- [x] Update requirements.txt with all necessary packages based on code analysis
+- [x] Create a new virtual environment
+- [x] Activate the virtual environment
+- [x] Install packages from requirements.txt
+- [x] Download spacy language model (en_core_web_sm)
+- [x] Verify installation
