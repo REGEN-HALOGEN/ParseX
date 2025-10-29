@@ -1,0 +1,3 @@
+- [x] Update project structure in README.md (correct filename from streamlit_app.py to ParseX.py)
+- [x] Add detailed descriptions of frameworks used (Streamlit, FastAPI, AI/ML libraries like transformers, torch, spacy, OCR with pytesseract and opencv)
+- [x] Ensure setup and usage instructions match the actual code

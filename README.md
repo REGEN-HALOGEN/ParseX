@@ -1,26 +1,45 @@
 # AI Document Intelligence Project
 
 ## Overview
-This project implements an AI-powered document processing and analysis system with a user-friendly web interface.
+This project implements an AI-powered document processing and analysis system with a user-friendly web interface built using Streamlit and a robust API server powered by FastAPI.
 
 ## Features
-- Document text extraction using OCR
-- Named entity recognition
-- Key phrase extraction
-- Text summarization
-- Sentiment analysis
-- Document layout analysis
-- Web-based user interface
+- Document text extraction using OCR (Tesseract)
+- Named entity recognition using spaCy and transformers
+- Key phrase extraction with scikit-learn and transformers
+- Text summarization powered by Hugging Face transformers
+- Sentiment analysis using torch-based models
+- Document layout analysis with OpenCV
+- Web-based user interface built with Streamlit
+- RESTful API with FastAPI for programmatic access
+
+## Frameworks and Libraries Used
+- **Streamlit**: For the interactive web interface (ParseX.py)
+- **FastAPI**: For the API server (main.py) with automatic documentation
+- **Transformers & Torch**: For advanced NLP tasks like summarization and entity recognition
+- **spaCy**: For natural language processing and named entity recognition
+- **OpenCV**: For image preprocessing and computer vision tasks
+- **Tesseract (pytesseract)**: For optical character recognition (OCR)
+- **NumPy & Pandas**: For data manipulation and analysis
+- **scikit-learn**: For machine learning utilities
+- **pdf2image & python-docx**: For handling PDF and DOCX document formats
 
 ## Project Structure
 ```
 .
-├── src/              # Source code
-├── tests/            # Test files
-├── models/           # Trained ML models
-├── data/            # Data files
-├── main.py          # API server
-└── streamlit_app.py # Web interface
+├── src/                    # Source code
+│   ├── __init__.py
+│   ├── api.py              # API endpoints
+│   ├── document_processor.py # OCR and image processing
+│   └── text_analyzer.py    # NLP analysis
+├── tests/                  # Test files
+├── models/                 # Trained ML models
+├── data/                   # Data files
+├── main.py                 # FastAPI server
+├── ParseX.py               # Streamlit web interface
+├── requirements.txt        # Python dependencies
+├── setup.py                # Package setup
+└── README.md               # This file
 ```
 
 ## Setup
@@ -37,7 +56,7 @@ pip install -r requirements.txt
 ## Usage
 1. Start the web interface:
 ```bash
-streamlit run streamlit_app.py
+streamlit run ParseX.py
 ```
 
 2. Or use the API server:
@@ -47,8 +66,8 @@ python main.py
 The API will be available at `http://localhost:8000`
 
 ## Web Interface
-The web interface provides an easy way to:
-- Upload documents
+The Streamlit web interface provides an easy way to:
+- Upload documents (PNG, JPG, JPEG, PDF, DOCX)
 - View extracted text
 - See named entities and key phrases
 - Get text summaries
