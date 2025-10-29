@@ -84,4 +84,4 @@ The Streamlit web interface provides an easy way to:
 - See requirements.txt for Python packages
 
 ## License
-[License information will be added here]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
